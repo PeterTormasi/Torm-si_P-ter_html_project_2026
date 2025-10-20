@@ -30,7 +30,7 @@
         <h2>&#171;nav&#187;</h2>
         <div id="menu">
           <ul>
-            <li><a href="index.html">fooldal</a></li>
+            <li><a href="index.html">Fooldal</a></li>
             <li>
               <a href="#nogo">HTML demo</a>
               <ul>
@@ -52,48 +52,58 @@
             <fieldset>
               <legend>Megrendelő adatai</legend>
               <p>
-                <label for="">
-                    Név: <input type="text" name="nev" id="nev"/>
+                <label for="nev">
+                    Név: <input type="text" name="nev" id="nev" placeholder="Név megadása.." required>
                 </label>
                 <small>Vezetéknév Keresztnév</small>
               </p>
               <p>
+                <label for="Telefon">
+                    Telefon: <input type="tel" name="Telefon" id="Telefon" size="17" placeholder="Telefonszám megadása.." required>
+                </label>
+              </p>
+              <p>
                 <label for="">
-                    Telefon: <input type="tel" name="Telefon" id="Telefon" size="17">
+                    Kisszállitási cím: <input type="text" name="cim" id="cim" placeholder="Ide kérem.." required>
                 </label>
               </p>
             </fieldset>
             <fieldset>
                 <legend>A pizza mérete</legend>
                 <p>
-                    <label for="">
-                        <input type="radio" name="meret" value="kicsi" checked id="">kicsi
+                    <label for="meret">
+                        <input type="radio" name="meret" value="kicsi" checked id="meret">kicsi
                     </label>
                 </p>
                 <p>
-                    <label for="">
-                        <input type="radio" name="meret" value="nagy" id="">nagy
+                    <label for="meret2">
+                        <input type="radio" name="meret" value="nagy" id="meret2">nagy
                     </label>
                 </p>
             </fieldset>
             <fieldset>
                 <legend>feltétek</legend>
                 <p>
-                    <label for="">
-                        <input type="checkbox" name="feltet1" value="sonka" id="" checked>Sonka
+                    <label for="feltet1">
+                        <input type="checkbox" name="feltet1" value="sonka" id="feltet1" checked>Sonka
                     </label>
                 </p>
                 <p>
-                    <label for="">
-                        <input type="checkbox" name="feltet2" value="sajt" id="">Sajt
+                    <label for="feltet2">
+                        <input type="checkbox" name="feltet2" value="sajt" id="feltet2">Sajt
                     </label>
                 </p>
                 <p>
-                    <label for="">
-                        <input type="checkbox" name="feltet3" value="gomba" id="">Gomba
+                    <label for="feltet3">
+                        <input type="checkbox" name="feltet3" value="gomba" id="feltet3">Gomba
                     </label>
                 </p>
             </fieldset>
+            <p><label for="mennyiseg">mennyiség: <input type="number" name="mennyiseg" id="mennyiseg" required></label></p>
+            <p><label for="kisszallitas">Kért kiszállitási idő: <input type="date" name="kisszallitas" id="kisszallitas" required></label></p>
+            <p><label for="egyeb">Egyéb kívánságok: <br><textarea name="egyeb" id="egyeb"></textarea></label></p>
+            <button type="reset">Alaphelyzet</button>
+            <button type="submit">Megrendelés</button>
           </form>
         </article>
       </section>
