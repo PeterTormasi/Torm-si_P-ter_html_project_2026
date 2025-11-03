@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>11a2 HTML projekt HTML űrlap</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img
+            src="images/premo.png"
+            alt="Premo logo"
+            width="190"
+            title="Premo logo"
+          />
+        </a>
+      </div>
+      <div id="banner-content">
+        <a href="index.html"
+          ><h1 title="11a html projekt 2026">11a html projekt 2026</h1></a
+        >
+        <h2>&#171;header&#187;</h2>
+      </div>
+    </header>
+    <div class="container">
+      <nav>
+        <h2>&#171;nav&#187;</h2>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Fooldal</a></li>
+            <li>
+              <a href="#nogo">HTML demo</a>
+              <ul>
+                <li><a href="animation.html">CSS animáció</a></li>
+                <li><a href="form.html">HTML űrlap</a></li>
+                <li><a href="table.html">HTML táblázat</a></li>
+                <li><a href="gallery.html">Képgaléria</a></li>
+                <li><a href="media.html">Média</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <h2>&#171;section&#187;</h2>
+        <article>
+          <h2>&#171;HTML űrlap&#187;</h2>
+          <form action="">
+            <fieldset>
+              <legend>Megrendelő adatai</legend>
+              <p>
+                <label for="nev">
+                    Név: <input type="text" name="nev" id="nev" placeholder="Név megadása.." required>
+                </label>
+                <small>Vezetéknév Keresztnév</small>
+              </p>
+              <p>
+                <label for="Telefon">
+                    Telefon: <input type="tel" name="Telefon" id="Telefon" size="17" placeholder="Telefonszám megadása.." required>
+                </label>
+              </p>
+              <p>
+                <label for="">
+                    Kisszállitási cím: <input type="text" name="cim" id="cim" placeholder="Ide kérem.." required>
+                </label>
+              </p>
+            </fieldset>
+            <fieldset>
+                <legend>A pizza mérete</legend>
+                <p>
+                    <label for="meret">
+                        <input type="radio" name="meret" value="kicsi" checked id="meret">kicsi
+                    </label>
+                </p>
+                <p>
+                    <label for="meret2">
+                        <input type="radio" name="meret" value="nagy" id="meret2">nagy
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>feltétek</legend>
+                <p>
+                    <label for="feltet1">
+                        <input type="checkbox" name="feltet1" value="sonka" id="feltet1" checked>Sonka
+                    </label>
+                </p>
+                <p>
+                    <label for="feltet2">
+                        <input type="checkbox" name="feltet2" value="sajt" id="feltet2">Sajt
+                    </label>
+                </p>
+                <p>
+                    <label for="feltet3">
+                        <input type="checkbox" name="feltet3" value="gomba" id="feltet3">Gomba
+                    </label>
+                </p>
+            </fieldset>
+            <p><label for="mennyiseg">mennyiség: <input type="number" name="mennyiseg" id="mennyiseg" required></label></p>
+            <p><label for="kisszallitas">Kért kiszállitási idő: <input type="date" name="kisszallitas" id="kisszallitas" required></label></p>
+            <p><label for="egyeb">Egyéb kívánságok: <br><textarea name="egyeb" id="egyeb"></textarea></label></p>
+            <button type="reset">Alaphelyzet</button>
+            <button type="submit">Megrendelés</button>
+          </form>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <h2>&#171;footer&#187;</h2>
+      <p id="kozepre">&#169; 2025/26 | Tormási Péter | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
