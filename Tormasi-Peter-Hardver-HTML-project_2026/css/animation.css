@@ -1,0 +1,10 @@
+section img {
+    width: 32%;
+    height: auto;
+    transition: transform 2s ease-in-out, opacity 2s ease;;
+    opacity: 1;
+}
+
+section div {
+    width: 100%;
+}
